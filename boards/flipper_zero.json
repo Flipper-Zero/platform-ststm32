@@ -1,0 +1,43 @@
+{
+  "build": {
+    "cpu": "cortex-m4",
+    "extra_flags": "-DSTM32L476xx",
+    "f_cpu": "80000000L",
+    "mcu": "stm32l476rgt6",
+    "variant": "NUCLEO_L476RG"
+  },
+  "connectivity": [
+    "can"
+  ],
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "STM32L476RG",
+    "onboard_tools": [
+      "stlink"
+    ],
+    "openocd_board": "st_nucleo_l4",
+    "svd_path": "STM32L4x6.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "mbed",
+    "stm32cube",
+    "zephyr"
+  ],
+  "name": "ST Nucleo L476RG",
+  "upload": {
+    "maximum_ram_size": 131072,
+    "maximum_size": 1048576,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "stlink",
+      "blackmagic",
+      "mbed"
+    ]
+  },
+  "url": "https://developer.mbed.org/platforms/ST-Nucleo-L476RG/",
+  "vendor": "ST"
+}
